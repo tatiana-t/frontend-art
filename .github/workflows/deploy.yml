@@ -14,6 +14,6 @@ jobs:
       - run: set -eu
       - run: mkdir "$HOME/.ssh"
       - run: echo "${{ secrets.key }}" > "$HOME/.ssh/key"
-      - run: chmod 600 "$HOME/.ssh/authorized_keys"
+      - run: chmod 600 "$HOME/.ssh/key"
       # Deploy
-      - run: rsync -e "ssh -p 22 -i $HOME/.ssh/authorized_keys -o StrictHostKeyChecking=no" --archive --compress --delete . poire@poire.beget.tech:/home/p/poire/frontend-art.ru/public_html
+      - run: rsync -e "ssh -p 22 -i $HOME/.ssh/key -o StrictHostKeyChecking=no" --archive --compress --delete . poire@poire.beget.tech:/home/p/poire/frontend-art.ru/public_html
