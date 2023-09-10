@@ -25,7 +25,6 @@ ul {
 
 body {
     height: 100%;
-    min-height: 100vh;
 
     font-family: Raleway-thin, sans-serif;
     font-size: 18px;
@@ -35,6 +34,8 @@ body {
 }
 
 .frontend-art {
+    min-height: 100vh;
+
     padding-top: 20px;
     background-color: #236954;
 
