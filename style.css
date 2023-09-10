@@ -222,7 +222,7 @@ body {
 
     .footer__item_center {
         position: static;
-        z-index: 1;
+        transform: none;
     }
 
     .footer__item:last-child {
