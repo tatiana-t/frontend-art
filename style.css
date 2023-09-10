@@ -18,6 +18,10 @@ ul {
     list-style: none;
 }
 
+p {
+    font-family: inherit;
+}
+
 :root {
     --left-shift: calc(50% - 87px);
     --right-width: calc(50% + 87px);
@@ -43,6 +47,7 @@ body {
     flex-direction: column;
     align-items: stretch;
     justify-content: space-between;
+    gap: 40px;
 }
 
 .header {
@@ -156,7 +161,6 @@ body {
     width: 100%;
     padding-top: 20px;
     padding-bottom: 20px;
-    /*margin-top: auto;*/
     border-top: 2px solid #FFFDEF;
 }
 
@@ -178,9 +182,8 @@ body {
 
 .footer__item_center {
     position: absolute;
-    left: 0;
-    right: 0;
-    z-index: -1;
+    left: 50%;
+   transform: translateX(-50%);
 }
 
 .proto {
@@ -219,6 +222,7 @@ body {
 
     .footer__item_center {
         position: static;
+        z-index: 1;
     }
 
     .footer__item:last-child {
