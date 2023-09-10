@@ -85,7 +85,7 @@ body {
     font-variation-settings: "wght" 100;
 }
 
-.header__mail:hover {
+.header__mail-link:hover {
     color: #DC949B;
 }
 
