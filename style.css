@@ -30,24 +30,24 @@ p {
 body {
     height: 100%;
 
-    font-family: Raleway-thin, sans-serif;
-    font-size: 18px;
-    color: #FFFDEF;
-    cursor: url('images/cursor.svg'), auto;
+
 
 }
 
 .frontend-art {
     min-height: 100vh;
-
-    padding-top: 20px;
-    background-color: #236954;
-
     display: flex;
     flex-direction: column;
     align-items: stretch;
     justify-content: space-between;
     gap: 40px;
+    padding-top: 20px;
+
+    font-family: Raleway-thin, sans-serif;
+    font-size: 18px;
+    color: #FFFDEF;
+    cursor: url('images/cursor.svg'), auto;
+    background-color: #236954;
 }
 
 .header {
@@ -124,7 +124,6 @@ body {
     text-align: center;
     margin: 0 auto;
     line-height: 30px;
-    font-family: Raleway-thin, sans-serif;
 }
 
 .main__text a {
