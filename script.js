@@ -26,9 +26,11 @@ const setActive = () => {
         .querySelector(`[href='#${section.getAttribute("id")}']`)
         .classList.add("tabs__item_active");
 
-      setTimeout(() => {
+      Promise.resolve(() => {
         location.hash = section.getAttribute("id");
       });
+      // setTimeout(() => {
+      // }, 100);
 
       if (isMobile) {
         document.body.querySelector(".tabs__item_active").scrollIntoView();
