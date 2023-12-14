@@ -29,8 +29,6 @@ const setActive = () => {
       Promise.resolve(() => {
         location.hash = section.getAttribute("id");
       });
-      // setTimeout(() => {
-      // }, 100);
 
       if (isMobile) {
         document.body.querySelector(".tabs__item_active").scrollIntoView();
